@@ -1,0 +1,10 @@
+let text = "hello " ;
+
+let code = ["html" , "css" , "js"];
+
+// document.write( text + code[1] + "<br>");
+
+for(let i = 0 ; i < code.length ; i++)
+{
+  document.write(text + code[i] + "<br>");
+}
