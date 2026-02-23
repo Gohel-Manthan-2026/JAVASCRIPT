@@ -1,0 +1,35 @@
+let text = "hello " ;
+
+let code = ["html" , "css" , "js"];
+
+// document.write( text + code[1] + "<br>");
+
+// for(let i = 0 ; i < code.length ; i++)
+// {
+//   document.write(text + code[i] + "<br>");
+// }
+
+let i = 0;
+
+// while(i < code.length)
+// {
+//   document.write(text + code[i] + "<br>");
+//   i++;
+// }
+
+// do
+// {
+//   document.write(text + code[i] + "<br>");
+//   i++;
+// }
+// while(i < code.length);
+
+code.forEach((Car) =>
+{
+  document.write(text + Car + "<br>");
+  
+});
+
+
+
+
