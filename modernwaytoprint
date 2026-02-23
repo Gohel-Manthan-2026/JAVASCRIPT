@@ -1,0 +1,6 @@
+let Class = 'D';
+let roll = 10;
+let name = "ABC";
+
+// document.write("The Class is "+Class+" Roll is "+roll+" Name is "+name);
+document.write(`The Class is ${Class} Roll is  ${roll} Name is ${name} `);
