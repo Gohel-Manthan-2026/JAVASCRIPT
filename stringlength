@@ -1,0 +1,5 @@
+let A = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" ;
+
+// document.print(alphabet.length);
+
+document.getElementById("h1").innerHTML = A.length  + "\n \'alphabe\'t";
