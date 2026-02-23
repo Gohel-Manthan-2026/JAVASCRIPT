@@ -1,0 +1,31 @@
+function Sum(x , y)
+{
+  return x + y;
+}
+document.writeln(Sum(10 , 20) + "<br>"); 
+
+function Addi(x , y)
+{
+  return x - y;
+}
+document.writeln(Addi(10 , 20) + "<br>"); 
+
+function Multi(x , y)
+{
+  return x * y;
+}
+document.writeln(Multi(10 , 20)+ "<br>"); 
+
+function Div(x , y)
+{
+  return x / y;
+}
+document.writeln(Div(10 , 20)+ "<br>"); 
+
+function Mod(x , y)
+{
+  return x % y ;
+}
+document.writeln(Mod(10 , 20)+ "<br>"); 
+
+
