@@ -1,0 +1,11 @@
+// let Android = ["playstor    e " , " google      " , " free"];
+// let Android = "      playstore     Google ";
+let Android = "5";
+// let Ios = ["appstore" , "apple" , "paid"];
+
+for(let i = 0 ; i < Android.length  ; i++)
+{
+  document.getElementById("h1").innerHTML = Android.repeat(200);
+}
+
+
