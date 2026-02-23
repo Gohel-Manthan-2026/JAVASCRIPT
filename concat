@@ -1,0 +1,9 @@
+// Concat merge any two strings or two arrays
+
+let Android = ["playstore" ,  "google" , "free"];
+let Ios = ["appstore" , "apple" , "paid"];
+
+for(let i = 0 ; i <= Android.length  ; i++)
+{
+  document.getElementById("h1").innerHTML = Ios.concat(`  ${Android} `);
+}
