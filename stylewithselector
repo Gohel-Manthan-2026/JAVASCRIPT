@@ -1,0 +1,21 @@
+let x = 10;
+
+let h1 = document.getElementById("h1");
+
+if(x == 10)
+{
+  h1.innerHTML = "TRUE";
+  h1.style = `
+    background : red ; 
+    padding : 10px ;
+    width : fit-content ;
+    border : 1px solid white ;
+    border-radius : 24px ;
+  `
+  
+  
+}
+else
+{
+  h1.innerHTML = "FALSE";
+}
