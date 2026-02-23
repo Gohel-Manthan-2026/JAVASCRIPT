@@ -1,0 +1,5 @@
+let a = "a";
+// let b = "a";
+let b = String.fromCharCode(97);
+
+document.write(a === b);
