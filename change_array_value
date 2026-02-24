@@ -1,0 +1,5 @@
+let a = ["Mango" , "Banana" , "Potato"];
+
+a[2] = "Graphes";
+
+document.write(a);
