@@ -1,0 +1,22 @@
+setTimeout(() =>
+{
+  
+  setTimeout(() => {
+    
+  let h1 = document.getElementById("h1");
+    h1.style = "display : none ;" ;
+    
+  },1000);
+  
+  let h1 = document.getElementById("h1");
+  
+    
+  h1.style = `
+  
+  transition : opacity 1s ease ;
+  opacity : 0 ;
+  
+  `;
+  
+  
+},2000);
