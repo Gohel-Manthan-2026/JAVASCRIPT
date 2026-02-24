@@ -1,0 +1,5 @@
+let a = ["Mango" , "Banana" , "Potato"];
+
+a = a[a.length - 1];
+
+document.write(a);
