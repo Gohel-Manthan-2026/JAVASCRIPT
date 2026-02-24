@@ -1,0 +1,14 @@
+function Employee(id , name)
+{
+  this.id  ;
+  this.name ;
+}
+
+// let emp = new Employee(1 , "Manthan");
+
+let emp = new Employee();
+
+let id = emp.id = 1 ; 
+let name = emp.name = "Manthan";
+
+document.write(`ID = ${id} <br> Name = ${name}`);
