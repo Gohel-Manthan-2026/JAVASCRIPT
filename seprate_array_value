@@ -1,0 +1,3 @@
+let a = [97 , 97 , 97];
+
+document.write(a.join(" | "));
