@@ -1,0 +1,123 @@
+<!-- <link rel="stylesheet" href="styles.css" type="text/css" media="all" /> -->
+<!-- <script src="script.js"></script> -->
+<style>
+  body
+{
+  /*background : #2a2a2a;*/
+  font-family : "Arial" , sans-serif;
+  user-select: none;
+  display : flex;
+  align-items: center ;
+  justify-content: center;
+}
+
+.popup
+{
+  display: flex ;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+  border : 5px solid hsl(0 0 80);
+  border-radius : 24px ;
+  background : hsl(0 0 90);
+  box-shadow : 0 0 18px hsl(0 0 80);
+}
+
+.text
+{
+  display: flex;
+  align-items: center;
+  /*border : 1px solid black ;*/
+  padding : 30px ;
+  letter-spacing: 1px ;
+}
+
+.que
+{
+  /*border: 1px solid black ;*/
+  padding : 20px ;
+  display : flex ;
+  align-items : center ;
+  gap : 10px ;
+  justify-content: space-between;
+}
+
+.yes button
+{
+  border : 2px solid hsl(190 80 40);
+  border-radius : 24px ;
+  text-align: center;
+  margin-left : 10px ;
+  width:  60px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background : hsl(190 80 40);
+  color : hsl(0 0 90);
+  cursor : pointer;
+  position: relative;
+  padding : 8px 12px 8px 12px;
+  transition: all 0.5s ease;
+}
+
+.no button
+{
+  border : 2px solid hsl(190  80  40);
+  border-radius : 24px ;
+  text-align: center;
+  position: relative;
+  margin-right : 10px ;
+  width:  60px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background : hsl(0 0 90);
+  color : hsl(190 80 40);
+  cursor : pointer;
+  padding : 8px 12px 8px 12px;
+}
+</style>
+<body>
+<div class="popup">
+    <div id="text" class="text">
+    Are You 18 Years Old ?
+    </div>
+  <div class="que">
+    <div id="yes" class="yes"><button>Yes</button></div>
+    <div id="no" class="no"><button>No</button></div>
+  </div>
+</div>
+</body>
+<script>
+  setTimeout(function() 
+{
+  let yes = document.getElementById("yes");
+  let no = document.getElementById("no");
+  
+  setTimeout(function()
+  {
+  
+    yes.style = " display : none ;"
+    no.style = " translateX(-130px);"
+    
+    // no.classList.remove('no'); // remove entire class (styles)
+  
+    
+  } , 2000);
+  
+    yes.style = `
+    opacity : 0 ;
+    transition : opacity 0.2s ease-in ;
+    `
+  
+    no.style =
+    `
+      position : relative ;
+      transition : all 0.5s ease-in-out ;
+      transform : translateX(-130px);
+
+    `
+    
+
+}, 2000);
+</script>
