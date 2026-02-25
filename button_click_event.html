@@ -1,0 +1,143 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css" type="text/css" media="all" />
+</head>
+<style>
+  body
+{
+  font-family : "Arial" , sans-serif;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#h1
+{
+  position: relative;
+
+}
+
+.theme
+{
+  display: flex;
+  align-content: center;
+}
+
+.mode
+{
+  width : fit-content;
+  display: flex ;
+  align-content: center;
+}
+
+button
+{
+  display: flex;
+  align-content: center;
+  padding : 10px ;
+  justify-content: space-between;
+  border-radius : 24px ;
+  width : 100px;
+  background : hsl(0 0 80);
+  border : 2px solid hsl(0 0 85);
+  box-shadow : 0 0 20px hsl(0 0 90);
+}
+</style>
+<body id="body">
+  
+  <div class="theme">
+    <button id="m">
+ <!--<input type="checkbox" class="mode"  id="mode">-->
+ <span id="h1">Light</span>
+    </button>
+  </div>
+
+<script>
+  let mode = document.querySelector("#mode");
+let h1 = document.querySelector("#h1");
+let body = document.querySelector("#body");
+let btn = document.querySelector("#m");
+
+let isClicked = false;
+ 
+// btn.onclick = function()
+// {
+  
+//   isClicked = !isClicked ;
+  
+//   if(isClicked == true)
+//   {
+//     body.style = `
+//     background : hsl(0 0 50) ;
+//     transition : all  0.4s ease ;
+//     `;
+    
+//     h1.innerHTML = "light";
+//   }
+//   else
+//   {
+//     body.style = `
+//     background : hsl(0 0 80) ;
+//     transition : 0.4s ease ;
+//     `;
+    
+//     h1.innerHTML = "dark";
+//   }
+  
+  
+//   /*
+//   if(mode.checked == true)
+//   {
+//   h1.innerHTML = "Dark";
+//   body.style = `
+//   background : #2a2a2a ; 
+//   color : white ;
+//   transition : 0.4s ease ;
+//   `;
+    
+//   }
+//   else
+//   {
+//     h1.innerHTML = "Light";
+//     body.style = `
+//     background : white ;
+//     color ; #2a2a2a ;
+//     transition : 0.4s ease ;
+//     `;
+//   }*/
+// };
+
+// btn.addEventListener('click' , function()
+// {
+  
+//   isClicked = !isClicked ;
+  
+//   if(isClicked == true)
+//   {
+//     body.style = "background : red ;";
+//   }
+//   else if(isClicked == true)
+//   {
+//     body.style = "background : blue ;";
+//   }
+//   else
+//   {
+//     body.style = "background : green ;";
+//   }
+// });
+
+function RANDOM()
+{
+  return Math.floor(Math.random() * 100);
+}
+
+btn.addEventListener('click' , function()
+{
+  // h1.style = `background : rgb( ${Math.floor(Math.random() * 100);} ,  ${Math.floor(Math.random() * 100);},  ${Math.floor(Math.random() * 100);} )`;
+  body.style = `background : hsl( ${RANDOM()}  ${RANDOM()}  ${RANDOM()})`;
+});
+
+</script>
+</body>
+</html>
