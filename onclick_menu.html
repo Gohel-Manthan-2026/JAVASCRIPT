@@ -1,0 +1,198 @@
+<script>
+  
+let isclicked = false;
+
+// btn.addEventListener('mouseenter' , function()
+// {
+  
+//   isclicked = !isclicked;
+  
+//   if(isclicked == true)
+//   {
+    
+//   list.style = `
+//   transition : all 1s ease ;
+//   display : flex ;
+//   `;
+//   }
+//   else
+//   {
+//     list.style = "display : none ";
+//   }
+// });
+
+// btn.addEventListener('mouseenter' , function()
+// {
+//   list.style = 
+//   `
+//     display : flex ;
+//     transition : 1s ease ;
+//     padding : 20px ;
+//   `;
+  
+// });
+
+// list.addEventListener('mouseenter' , function()
+// {
+//   list.style = `
+  
+//   display : flex ;
+//     transition : 1s ease ;
+//     padding : 20px ;
+//   `;
+// });
+
+// btn.addEventListener('mouseleave' , function()
+// {
+//   list.style = `display : none `;
+// });
+
+// list.addEventListener('mouseleave' , function()
+// {
+//   list.style = "display : none ";
+// });
+
+
+btn.addEventListener('click' , function()
+{
+  list.classList.add("show");
+  
+});
+
+
+
+// btn.addEventListener('click' , function()
+// {
+//   list.classList.remove("show");
+// });
+
+
+</script>
+
+<style>
+  *
+{
+  padding : 0;
+  margin : 0;
+  box-sizing: border-box;
+  transition : 1s ease ;
+}
+
+body
+{
+  background : hsl(0 0 90);
+  color : hsl(0 0 10);
+  font-family: "Arial" , Sans-Serif;
+}
+
+.menu
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column ;
+  border : 1px solid hsl(0 0 40);
+  padding : 20px ;
+  gap : 10px ;
+}
+
+button
+{
+  border : 1px solid black;
+  padding : 6px 8px 6px 8px ;
+  border-radius : 24px;
+  box-shadow: 0 0 20px hsl(0 0 80);
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+button:hover
+{
+  box-shadow : none;
+  transition: 0.4s ease;
+}
+
+.list ul
+{
+  list-style-type: none ;
+  transition : 0.4s ease ;
+}
+
+.list
+{
+  border : 1px solid hsl(0 0 50);
+  /*padding : 10px ;*/
+  /*padding : 0px ;*/
+  /*max-height: 0px;*/
+  /*overflow: hidden;*/
+  border-radius : 12px ;
+  position: relative;
+  opacity : 0;
+  transition : opacity 1s ease-in ;
+  display: none;
+  
+}
+
+a
+{
+  text-decoration: none;
+  transition : 0.3s ease-in;
+  color : black;
+  
+}
+
+a:hover
+{
+  font-size : 18px ;
+  /*box-shadow: 0 0 10px skyblue ;*/
+  color : blue ;
+  text-shadow : 0 0 10px skyblue;
+  /*background : hsl(0 0 80);*/
+  transition:  0.2s ease-in;
+}
+
+.list:before
+{
+  content : ' ';
+  border : 1px solid tan;
+  background : grey;
+  z-index: 1000;
+  height: 0px ;
+  width : 80px ;
+  padding : 10px ;
+  position: absolute;
+  top : -15px;
+  left :  -5px;
+  transition : opacity  1s ease ;
+}
+
+
+.list.show
+{
+  display: flex;
+  padding : 20px ;
+  opacity : 1;
+  transition : opacity 1s ease ;
+}
+
+</style>
+
+<link rel="stylesheet" href="styles.css" type="text/css" media="all" />
+<body>
+  <nav>
+  <div class="menu">
+    <button id="btn">Menu</button>
+    <div id="list" class="list">
+
+<div class="show">
+<ul type="">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Contact</a></li>
+</ul>
+</div> 
+    </div>
+  </div>
+  </nav>
+<script src="script.js" type="text/javascript" charset="utf-8"></script>
+</body>
