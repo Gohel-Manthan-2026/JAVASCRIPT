@@ -1,0 +1,42 @@
+<style>
+body{
+  padding: 25px;
+  background : hsl(0 0 20);
+}
+.title {
+	color: #5C6AC4;
+}
+</style>
+<body id="body">
+  
+<button id="play" onclick="btn_click();" class="play">Play</button>
+<button id="pause" class="pause">Pause</button>
+
+</body>
+
+<script>
+
+let click = false;
+
+
+function btn_click()
+{
+  
+if(click != true)
+{
+  body.style = "background : black";
+}
+else
+{
+  body.style = "background : grey";
+}
+
+click = !click;
+
+play.classList.toggle("play" , click);
+play.classList.toggle("pause" , !click);
+play.classList.toggle("active" , click);
+
+}
+
+</script>
